@@ -4,7 +4,7 @@ Models different generators and redistributing reduced voltage to "houses".
 
 //Overall wiring of the project is in "OverallWiring.png"
 
-Using NodeMCu ESP8266 boards, we set up a controllable (see RelayWiring.png) solar panel and water generator, read their voltage with a voltage sensor, and reduced it to 5V. We then, via a central power breadboard, redistributed the power to "houses", each with a controllable (see HouseRelayWiring.png) fan and light, and monitored their power usage with the INA219 module. All readings were then sent to a database through MQTT, which allowed the data to be stored and displayed on a webpage. MQTT is essentially a messaging system that allows data to be sent wirelessly, on different networks, without the need of port forwarding. It uses a "topic" system similar to a file system, that allows organization of values. The following shows the topics that we read and wrote on.
+Using NodeMCu ESP8266 boards, we set up a controllable (see RelayWiring.png) solar panel and water generator, read their voltage with a voltage sensor, and reduced it to 5V, allowing us to power every nodeMCU board through VIN. We then, via a central power breadboard, redistributed the power to "houses", each with a controllable (see HouseRelayWiring.png) fan and light, and monitored their power usage with the INA219 module. All readings were then sent to a database through MQTT, which allowed the data to be stored and displayed on a webpage. MQTT is essentially a messaging system that allows data to be sent wirelessly, on different networks, without the need of port forwarding. It uses a "topic" system similar to a file system, that allows organization of values. The following shows the topics that we read and wrote on.
 
 **READING VALUES**
 
