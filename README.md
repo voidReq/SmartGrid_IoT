@@ -6,6 +6,7 @@ Models different generators and redistributing reduced voltage to "houses".
 
 /*
 MQTT is essentially a messaging system that allows data to be sent wirelessly, on different networks, without the need of port forwarding. It uses a "topic" system similar to a file system, that allows organization of values. 
+
 */
 
 We wired a water generator and a solar panel to a battery, with relays (see RelayWiring.png) connected to MQTT servers (via a NodeMCUesp8266) in the connections allowing us to turn on and off the stream of power. We then used two power regulators to reduce the 12V coming from the battery into a manageable 5V, while keeping up the amperage. In the connections were also voltage readers (SolarPanelVoltageSensor.ino, voltagedetection.md), that sent their readings to mqtt servers "vmi/solar/voltage" and "vmi/water/voltage".
