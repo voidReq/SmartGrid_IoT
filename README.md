@@ -22,16 +22,24 @@ The following shows the topics that we read and wrote on.
 House diagnostics:
 
 vmi/house1/current_mA //sends current of first house
+
 vmi/house1/wattage_mW //sends wattage of first house
+
 vmi/house1/voltage //sends voltage of first house
+
 vmi/house2/current_mA //sends current of second house
+
 vmi/house2/wattage_mW //sends wattage of second house
+
 vmi/house2/voltage //sends voltage of second house
+
 
 Generator diagnostics:
 
 vmi/solar/voltage
+
 vmi/water/voltage
+
 
 
 **PUBLISHING VALUES**
@@ -39,9 +47,13 @@ vmi/water/voltage
 //The following use 0 for off, 1 for on
 
 vmi/house1/light 
+
 vmi/house1/fan
+
 vmi/house2/light 
+
 vmi/house2/fan
+
 
 //To toggle the water generator send a 0 or 1, to toggle the solar generator use the same topic (vmi/water/toggle) but send a 2 for off and a 3 for on.
 
