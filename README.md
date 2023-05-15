@@ -5,6 +5,7 @@ Models different generators and redistributing reduced voltage to "houses".
 //Overall wiring of the project is in "OverallWiring.png"
 
 /*
+
 MQTT is essentially a messaging system that allows data to be sent wirelessly, on different networks, without the need of port forwarding. It uses a "topic" system similar to a file system, that allows organization of values. 
 
 */
